@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-We've built an application for a warehouse management system by implementing the model-view-controller design pattern. To view our application, run the WareFlowApplication.java file.
+We've built an application for a warehouse management system by implementing the model-view-controller design pattern. To view our application, run the src/main/java/ca/mcgill/ecse/wareflow/application/WareFlowApplication.java file.
 For more information about the WareFlow application, please consult the [wiki](../../wiki).
 
 ## Team Members

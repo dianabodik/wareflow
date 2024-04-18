@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="769.0" style="-fx-background-color: #d9b3ffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.wareflow.javafxFxml.WareFlowHomePageController">
+   <children>
+      <PasswordField fx:id="passwordField" layoutX="305.0" layoutY="317.0" />
+      <Text layoutX="215.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WareFlow Application">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Text layoutX="318.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Manager Password" />
+      <Button layoutX="328.0" layoutY="352.0" mnemonicParsing="false" onAction="#updatePasswordClicked" text="Update Password" />
+      <ButtonBar layoutX="-20.0" layoutY="-8.0" prefHeight="40.0" prefWidth="789.0">
+        <buttons>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#homeButtonClicked" prefHeight="25.0" text="Home" textAlignment="CENTER" textFill="#221d1d" />
+            <Button mnemonicParsing="false" onAction="#employeesButtonClicked" text="Employees" />
+            <Button mnemonicParsing="false" onAction="#clientsOnClicked" prefHeight="22.0" text="Clients" />
+            <Button mnemonicParsing="false" onAction="#itemTypesClicked" text="ItemTypes" />
+            <Button mnemonicParsing="false" onAction="#itemContainersClicked" prefHeight="25.0" prefWidth="691.0" text="ItemContainers" />
+          <Button mnemonicParsing="false" onAction="#shipmentOrderClicked" text="ShipmentOrder" />
+        </buttons>
+      </ButtonBar>
+       <HBox alignment="BOTTOM_RIGHT" />
+        <ImageView fx:id="logoView" fitHeight="262.0" fitWidth="394.0" layoutX="195.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../logo.png" />
+            </image>
+        </ImageView>
+   </children>
+</AnchorPane>

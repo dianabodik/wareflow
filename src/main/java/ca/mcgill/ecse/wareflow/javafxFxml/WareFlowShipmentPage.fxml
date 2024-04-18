@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.wareflow.javafxFxml.ShipmentPageController">
+   <children>
+      <Button layoutX="253.0" layoutY="171.0" mnemonicParsing="false" onAction="#assignOrderToEmployeeClicked" prefHeight="60.0" prefWidth="293.0" text="Assign Order to Employee" textFill="#47c950">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ButtonBar layoutX="-20.0" layoutY="-7.0" prefHeight="40.0" prefWidth="789.0">
+         <buttons>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#homeButtonClicked" prefHeight="25.0" text="Home" textAlignment="CENTER" textFill="#221d1d" />
+            <Button mnemonicParsing="false" onAction="#employeesButtonClicked" text="Employees" />
+            <Button mnemonicParsing="false" onAction="#clientsOnClicked" prefHeight="22.0" text="Clients" />
+            <Button mnemonicParsing="false" onAction="#itemTypesClicked" text="ItemTypes" />
+            <Button mnemonicParsing="false" onAction="#itemContainersClicked" prefHeight="25.0" prefWidth="691.0" text="ItemContainers" />
+            <Button mnemonicParsing="false" onAction="#shipmentOrderClicked" text="ShipmentOrder" />
+         </buttons>
+      </ButtonBar>
+      <Button layoutX="217.0" layoutY="78.0" mnemonicParsing="false" onAction="#addOrUpdateOrDeleteShipmentOrderClicked" prefHeight="60.0" prefWidth="365.0" text="Add/Update/Delete a Shipment Order" textFill="#47c950">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="15.0" layoutY="274.0" mnemonicParsing="false" onAction="#changeOrderStatusClicked" prefHeight="60.0" prefWidth="739.0" text="StartWork/MarkComplete/MarkApproved/MarkDissapproved a ShipmentOrder" textFill="#47c950">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="217.0" layoutY="372.0" mnemonicParsing="false" onAction="#addUpdateDeleteNoteClicked" prefHeight="60.0" prefWidth="375.0" text="Add/Update/Delete a ShipmentNote" textFill="#47c950">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="212.0" layoutY="466.0" mnemonicParsing="false" onAction="#viewShipmentOrdersClicked" prefHeight="60.0" prefWidth="375.0" text="View Shipment Orders" textFill="#47c950">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

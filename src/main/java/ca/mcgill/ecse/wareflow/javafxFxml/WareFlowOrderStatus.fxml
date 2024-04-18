@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.wareflow.javafxFxml.orderStatusPageController">
+   <children>
+      <ListView layoutX="127.0" layoutY="59.0" prefHeight="290.0" prefWidth="769.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+      <Button layoutX="30.0" layoutY="434.0" mnemonicParsing="false" onAction="#startWorkClicked" prefHeight="38.0" prefWidth="147.0" text="Start Work" textFill="#47c950" />
+      <TextField fx:id="orderID1" layoutX="177.0" layoutY="378.0" />
+      <Text layoutX="83.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="514.0" layoutY="538.0" mnemonicParsing="false" onAction="#markDissapprovedClicked" prefHeight="38.0" prefWidth="147.0" text="Mark Disapproved" textFill="#f50606" />
+      <Line endX="-8.0" endY="-139.0" layoutX="385.0" layoutY="456.0" startX="-8.0" startY="177.0" />
+      <Text layoutX="441.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="orderID2" layoutX="547.0" layoutY="351.0" />
+      <Text layoutX="444.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="444.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reason">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="date" layoutX="547.0" layoutY="413.0" />
+      <TextField fx:id="reason" layoutX="547.0" layoutY="476.0" />
+      <Button layoutX="124.0" layoutY="519.0" mnemonicParsing="false" onAction="#markCompleteClicked" prefHeight="38.0" prefWidth="147.0" text="Mark Complete" textFill="#47c950" />
+      <Button layoutX="204.0" layoutY="434.0" mnemonicParsing="false" onAction="#markApprovedClicked" prefHeight="38.0" prefWidth="147.0" text="Mark Approved" textFill="#47c950" />
+      <ButtonBar layoutX="-25.0" layoutY="-8.0" prefHeight="46.0" prefWidth="794.0">
+         <buttons>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#homeButtonClicked" prefHeight="25.0" text="Home" textAlignment="CENTER" textFill="#221d1d" />
+            <Button mnemonicParsing="false" onAction="#employeesButtonClicked" text="Employees" />
+            <Button mnemonicParsing="false" onAction="#clientsOnClicked" prefHeight="22.0" text="Clients" />
+            <Button mnemonicParsing="false" onAction="#itemTypesClicked" text="ItemTypes" />
+            <Button mnemonicParsing="false" onAction="#itemContainersClicked" prefHeight="25.0" prefWidth="691.0" text="ItemContainers" />
+            <Button mnemonicParsing="false" onAction="#shipmentOrderClicked" text="ShipmentOrder" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

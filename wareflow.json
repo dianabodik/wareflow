@@ -1,0 +1,461 @@
+{
+  "WareFlow": {
+    "employees": [
+      {
+        "Employee": [
+          {
+            "username": "jeff",
+            "name": "Jeff",
+            "password": "pass1",
+            "phoneNumber": "(555)555-5555",
+            "placedOrders": [
+              {
+                "ShipmentOrder": {
+                  "id": 2,
+                  "placedOnDate": "2023-07-10",
+                  "description": "10 beds packaged together",
+                  "quantity": 10,
+                  "managerApprovalRequired": true,
+                  "status": "Closed",
+                  "shipmentNotes": [
+                    ""
+                  ],
+                  "wareFlow": {
+                    "@reference": "../../../../.."
+                  },
+                  "orderPlacer": {
+                    "@class": "Employee",
+                    "@reference": "../../.."
+                  },
+                  "container": {
+                    "containerNumber": 1,
+                    "areaNumber": 9,
+                    "slotNumber": 23,
+                    "addedOnDate": "2022-03-20",
+                    "wareFlow": {
+                      "@reference": "../../../../../.."
+                    },
+                    "shipmentOrders": [
+                      {
+                        "ShipmentOrder": {
+                          "@reference": "../../.."
+                        }
+                      }
+                    ],
+                    "itemType": {
+                      "name": "NotFound TV",
+                      "expectedLifeSpanInDays": 0,
+                      "wareFlow": {
+                        "@reference": "../../../../../../.."
+                      },
+                      "itemContainers": [
+                        {
+                          "ItemContainer": {
+                            "@reference": "../../.."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "shipmentNotes": [
+              ""
+            ],
+            "shipmentOrders": [
+              ""
+            ],
+            "wareFlow": {
+              "@reference": "../../.."
+            }
+          },
+          {
+            "username": "smith",
+            "name": "Smith",
+            "password": "pass2",
+            "phoneNumber": "(555)555-5555",
+            "placedOrders": [
+              ""
+            ],
+            "shipmentNotes": [
+              ""
+            ],
+            "shipmentOrders": [
+              ""
+            ],
+            "wareFlow": {
+              "@reference": "../../.."
+            }
+          },
+          {
+            "username": "Diana12",
+            "name": "diana",
+            "password": "freiowhfg",
+            "phoneNumber": 2134121,
+            "placedOrders": [
+              ""
+            ],
+            "shipmentNotes": [
+              ""
+            ],
+            "shipmentOrders": [
+              {
+                "ShipmentOrder": {
+                  "id": 69,
+                  "placedOnDate": "2024-04-17",
+                  "description": "yum yellow bananas",
+                  "quantity": 2,
+                  "timeToFullfill": "LessThanADay",
+                  "priority": "Urgent",
+                  "managerApprovalRequired": true,
+                  "status": "Assigned",
+                  "shipmentNotes": [
+                    ""
+                  ],
+                  "wareFlow": {
+                    "@reference": "../../../../.."
+                  },
+                  "orderPlacer": {
+                    "@class": "Client",
+                    "username": "Gabe123",
+                    "name": "gabe",
+                    "password": "frwof",
+                    "phoneNumber": 234,
+                    "placedOrders": [
+                      {
+                        "ShipmentOrder": {
+                          "@reference": "../../.."
+                        }
+                      }
+                    ],
+                    "address": "gwreof",
+                    "wareFlow": {
+                      "@reference": "../../../../../.."
+                    }
+                  },
+                  "orderPicker": {
+                    "@class": "Employee",
+                    "@reference": "../../.."
+                  },
+                  "container": {
+                    "containerNumber": 13,
+                    "areaNumber": 1,
+                    "slotNumber": 1,
+                    "addedOnDate": "2024-04-17",
+                    "wareFlow": {
+                      "@reference": "../../../../../.."
+                    },
+                    "shipmentOrders": [
+                      {
+                        "ShipmentOrder": {
+                          "@reference": "../../.."
+                        }
+                      }
+                    ],
+                    "itemType": {
+                      "name": "banana",
+                      "expectedLifeSpanInDays": 1,
+                      "wareFlow": {
+                        "@reference": "../../../../../../.."
+                      },
+                      "itemContainers": [
+                        {
+                          "ItemContainer": {
+                            "@reference": "../../.."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "wareFlow": {
+              "@reference": "../../.."
+            }
+          },
+          {
+            "username": "Diana69",
+            "name": "diana",
+            "password": "areogn",
+            "phoneNumber": 1234,
+            "placedOrders": [
+              ""
+            ],
+            "shipmentNotes": [
+              ""
+            ],
+            "shipmentOrders": [
+              ""
+            ],
+            "wareFlow": {
+              "@reference": "../../.."
+            }
+          },
+          {
+            "username": "Gabe1",
+            "name": "gabriel",
+            "password": "wrods",
+            "phoneNumber": 1234567,
+            "placedOrders": [
+              ""
+            ],
+            "shipmentNotes": [
+              ""
+            ],
+            "shipmentOrders": [
+              {
+                "ShipmentOrder": {
+                  "id": 416,
+                  "placedOnDate": "2024-04-09",
+                  "description": "mubeen mucks",
+                  "quantity": 1,
+                  "timeToFullfill": "ThreeOrMoreWeeks",
+                  "priority": "Low",
+                  "managerApprovalRequired": false,
+                  "status": "Assigned",
+                  "shipmentNotes": [
+                    ""
+                  ],
+                  "wareFlow": {
+                    "@reference": "../../../../.."
+                  },
+                  "orderPlacer": {
+                    "@class": "Client",
+                    "username": "Deniz8",
+                    "name": "dneiz",
+                    "password": "woefbh",
+                    "phoneNumber": 3243,
+                    "placedOrders": [
+                      {
+                        "ShipmentOrder": {
+                          "@reference": "../../.."
+                        }
+                      }
+                    ],
+                    "address": "sgverw",
+                    "wareFlow": {
+                      "@reference": "../../../../../.."
+                    }
+                  },
+                  "orderPicker": {
+                    "@class": "Employee",
+                    "@reference": "../../.."
+                  },
+                  "container": {
+                    "containerNumber": 66,
+                    "areaNumber": 66,
+                    "slotNumber": 66,
+                    "addedOnDate": "2024-04-17",
+                    "wareFlow": {
+                      "@reference": "../../../../../.."
+                    },
+                    "shipmentOrders": [
+                      {
+                        "ShipmentOrder": {
+                          "@reference": "../../.."
+                        }
+                      }
+                    ],
+                    "itemType": {
+                      "name": "apple",
+                      "expectedLifeSpanInDays": 2,
+                      "wareFlow": {
+                        "@reference": "../../../../../../.."
+                      },
+                      "itemContainers": [
+                        {
+                          "ItemContainer": [
+                            {
+                              "@reference": "../../.."
+                            },
+                            {
+                              "containerNumber": 20,
+                              "areaNumber": 20,
+                              "slotNumber": 20,
+                              "addedOnDate": "2024-04-18",
+                              "wareFlow": {
+                                "@reference": "../../../../../../../../.."
+                              },
+                              "shipmentOrders": [
+                                ""
+                              ],
+                              "itemType": {
+                                "@reference": "../../.."
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ],
+            "wareFlow": {
+              "@reference": "../../.."
+            }
+          }
+        ]
+      }
+    ],
+    "clients": [
+      {
+        "Client": [
+          {
+            "@reference": "../../employees/Employee[3]/shipmentOrders/ShipmentOrder/orderPlacer"
+          },
+          {
+            "@reference": "../../employees/Employee[5]/shipmentOrders/ShipmentOrder/orderPlacer"
+          }
+        ]
+      }
+    ],
+    "manager": {
+      "username": "manager",
+      "password": "Hey!",
+      "placedOrders": [
+        {
+          "ShipmentOrder": {
+            "id": 1,
+            "placedOnDate": "2023-07-20",
+            "description": "Some TVs for shipment",
+            "quantity": 5,
+            "managerApprovalRequired": false,
+            "status": "Open",
+            "shipmentNotes": [
+              ""
+            ],
+            "wareFlow": {
+              "@reference": "../../../.."
+            },
+            "orderPlacer": {
+              "@class": "Manager",
+              "@reference": "../../.."
+            },
+            "container": {
+              "containerNumber": 2,
+              "areaNumber": 10,
+              "slotNumber": 35,
+              "addedOnDate": "2010-01-30",
+              "wareFlow": {
+                "@reference": "../../../../.."
+              },
+              "shipmentOrders": [
+                {
+                  "ShipmentOrder": {
+                    "@reference": "../../.."
+                  }
+                }
+              ],
+              "itemType": {
+                "name": "Bed",
+                "expectedLifeSpanInDays": 0,
+                "wareFlow": {
+                  "@reference": "../../../../../.."
+                },
+                "itemContainers": [
+                  {
+                    "ItemContainer": [
+                      {
+                        "@reference": "../../.."
+                      },
+                      {
+                        "containerNumber": 3,
+                        "areaNumber": 1,
+                        "slotNumber": 35,
+                        "addedOnDate": "2010-01-30",
+                        "wareFlow": {
+                          "@reference": "../../../../../../../.."
+                        },
+                        "shipmentOrders": [
+                          ""
+                        ],
+                        "itemType": {
+                          "@reference": "../../.."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "shipmentNotes": [
+        ""
+      ],
+      "shipmentOrders": [
+        ""
+      ],
+      "wareFlow": {
+        "@reference": "../.."
+      },
+      "ordersForApproval": [
+        ""
+      ]
+    },
+    "orders": [
+      {
+        "ShipmentOrder": [
+          {
+            "@reference": "../../manager/placedOrders/ShipmentOrder"
+          },
+          {
+            "@reference": "../../employees/Employee/placedOrders/ShipmentOrder"
+          },
+          {
+            "@reference": "../../employees/Employee[3]/shipmentOrders/ShipmentOrder"
+          },
+          {
+            "@reference": "../../employees/Employee[5]/shipmentOrders/ShipmentOrder"
+          }
+        ]
+      }
+    ],
+    "itemTypes": [
+      {
+        "ItemType": [
+          {
+            "@reference": "../../employees/Employee/placedOrders/ShipmentOrder/container/itemType"
+          },
+          {
+            "@reference": "../../manager/placedOrders/ShipmentOrder/container/itemType"
+          },
+          {
+            "@reference": "../../employees/Employee[3]/shipmentOrders/ShipmentOrder/container/itemType"
+          },
+          {
+            "@reference": "../../employees/Employee[5]/shipmentOrders/ShipmentOrder/container/itemType"
+          }
+        ]
+      }
+    ],
+    "itemContainers": [
+      {
+        "ItemContainer": [
+          {
+            "@reference": "../../employees/Employee/placedOrders/ShipmentOrder/container"
+          },
+          {
+            "@reference": "../../manager/placedOrders/ShipmentOrder/container"
+          },
+          {
+            "@reference": "../../manager/placedOrders/ShipmentOrder/container/itemType/itemContainers/ItemContainer[2]"
+          },
+          {
+            "@reference": "../../employees/Employee[3]/shipmentOrders/ShipmentOrder/container"
+          },
+          {
+            "@reference": "../../employees/Employee[5]/shipmentOrders/ShipmentOrder/container"
+          },
+          {
+            "@reference": "../../employees/Employee[5]/shipmentOrders/ShipmentOrder/container/itemType/itemContainers/ItemContainer[2]"
+          }
+        ]
+      }
+    ]
+  }
+}

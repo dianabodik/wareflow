@@ -1,0 +1,50 @@
+namespace ca.mcgill.ecse.wareflow.model;
+
+use ShipmentOrderStates.ump;
+
+class WareFlow {
+    public void reinitialize() {
+    // all classes with unique attributes are reinitialized here
+    // User.reinitializeUniqueUsername(getClients());
+    ShipmentOrder.reinitializeUniqueOrderId(getOrders());
+    ItemContainer.reinitializeUniqueContainerNumber(getItemContainers());
+    ItemType.reinitializeUniqueItemName(getItemTypes());
+    }
+}
+
+// implement reinitialize methods for each class that has a 'unique' attribute
+class User {
+    public static void reinitializeUniqueUsername(List<User> users) {
+        usersByUsername.clear();
+            for (var u : users) {
+                usersByUsername.put(u.getUsername(), u);
+            }
+    }
+}
+
+class ShipmentOrder {
+    public static void reinitializeUniqueOrderId(List<ShipmentOrder> orders) {
+        shipmentordersById.clear();
+            for (var o : orders) {
+                shipmentordersById.put(o.getId(), o);
+            }
+        }
+    }
+
+class ItemContainer {
+    public static void reinitializeUniqueContainerNumber(List<ItemContainer> containers) {
+            itemcontainersByContainerNumber.clear();
+            for (var c : containers) {
+                itemcontainersByContainerNumber.put(c.getContainerNumber(), c);
+            }
+        }
+    }
+
+class ItemType {
+    public static void reinitializeUniqueItemName(List<ItemType> names) {
+            itemtypesByName.clear();
+            for (var n : names) {
+                itemtypesByName.put(n.getName(), n);
+            }
+        }
+}

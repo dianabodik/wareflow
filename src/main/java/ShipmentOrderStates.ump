@@ -1,0 +1,138 @@
+<<<<<<< HEAD
+class ShipmentOrder {
+
+  status {
+    Open {
+      assignOrder(WarehouseStaff staff, PriorityLevel priority, TimeEstimate time) [canBeAssigned(staff)] / {
+        setPriorityAndTime(priority, time);
+        doAssignOrder(staff);
+      } -> Assigned;
+    }
+
+    Assigned {
+      startWork / {
+        markAsInProgress();
+      } -> InProgress;
+    }
+
+    InProgress {
+      completeOrder / {
+        markAsCompleted();
+      } -> Completed;
+    }
+
+    Completed {
+      [!managerApprovalRequired] / {
+        closeOrder();
+      } -> Closed;
+      [managerApprovalRequired && approval] / {
+        markOrderApproved();
+      } -> Closed;
+      [managerApprovalRequired && !approval] / {
+        requestOrderReturn();
+      } -> Assigned;
+    }
+
+    Closed {
+      
+    }
+  }
+  
+  boolean managerApprovalRequired;
+  boolean approval;
+
+  private boolean canBeAssigned(WarehouseStaff staff) {
+	 return staff != null;
+  }
+  
+  private void closeOrder() {
+  	setStatus(Status.Closed);
+  }
+  
+  private void setPriorityAndTime(PriorityLevel priority, TimeEstimate time) {
+	this.priority = priority;
+    this.timeToFulfill = time;
+  }
+  
+  private void doAssignOrder(WarehouseStaff staff) {
+  	this.orderPicker = staff;
+  }
+
+  private void markOrderApproved() {
+	if (getStatus() == Status.Completed && managerApprovalRequired && approval) {
+        setStatus(Status.Closed);
+    } else {
+        throw new RuntimeException("Order not approved.");
+    }
+  }
+  
+  private void markAsInProgress() {
+  	if (this.status == Status.Assigned) {
+    	setStatus(Status.InProgress);
+    } else {
+        throw new RuntimeException("Order not assigned.");
+    }
+  }
+  
+  private void markAsCompleted() {
+  	if (this.status == Status.InProgress) {
+    	setStatus(Status.Completed);
+    } else {
+        throw new RuntimeException("Order not in progress.");
+    }
+  }
+  
+  private void requestOrderReturn() {
+	if (getStatus() == Status.Completed && managerApprovalRequired && !approval) {
+        setStatus(Status.Assigned);
+    } else {
+        throw new RuntimeException("Order cannot be returned.");
+    }
+  }
+}
+=======
+class ShipmentOrder {
+
+    status {
+      Open {
+        assignOrder(WarehouseStaff staff, PriorityLevel priority, TimeEstimate time, boolean managerApprovalRequired)/ {
+
+          setPriorityAndTime(priority, time);
+          doAssignOrder(staff);
+          this.managerApprovalRequired = managerApprovalRequired;
+        } -> Assigned;
+      }
+  
+      Assigned {
+        startWork(ShipmentOrder orderId) -> InProgress;
+      }
+  
+      InProgress {
+        completeOrder(ShipmentOrder orderId) [managerApprovalRequired] -> Completed;
+        completeOrder(ShipmentOrder orderId) [!managerApprovalRequired] -> Closed;
+      }
+  
+      Completed {
+        approve() -> Closed;
+       	disapprove(Date date, String reason) -> InProgress;
+      }
+  
+      Closed {
+      }
+    }
+    
+ 
+    
+    private void setPriorityAndTime(PriorityLevel priority, TimeEstimate time) {
+      this.priority = priority;
+      this.timeToFullfill = time;
+    }
+    
+    private void doAssignOrder(WarehouseStaff staff) {
+        this.orderPicker = staff;
+        setStatus(Status.Assigned);
+
+    }
+    
+  }
+>>>>>>> origin/Sophia-features

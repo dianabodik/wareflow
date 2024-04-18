@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.wareflow.javafxFxml.ItemTypePageController">
+   <children>
+      <ListView layoutX="127.0" layoutY="59.0" prefHeight="290.0" prefWidth="769.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+      <Button layoutX="107.0" layoutY="478.0" mnemonicParsing="false" onAction="#addItemClicked" prefHeight="38.0" prefWidth="147.0" text="Add Item" textFill="#47c950" />
+      <TextField fx:id="itemName1" layoutX="198.0" layoutY="354.0" />
+      <Text layoutX="21.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expected  Item Lifespan">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="expectedLifeSpan" layoutX="198.0" layoutY="410.0" />
+      <Button layoutX="543.0" layoutY="562.0" mnemonicParsing="false" onAction="#removeItemClicked" prefHeight="38.0" prefWidth="147.0" text="Remove Item" textFill="#f50606" />
+      <Line endX="-8.0" endY="-139.0" layoutX="385.0" layoutY="456.0" startX="-8.0" startY="84.0" />
+      <TextField fx:id="itemName3" layoutX="335.0" layoutY="568.0" />
+      <Text layoutX="227.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Line endX="588.0" layoutX="181.0" layoutY="541.0" startX="-181.0" />
+      <Text layoutX="393.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="itemName2" layoutX="587.0" layoutY="329.0" />
+      <Text layoutX="393.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Item Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="393.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Expected Item Lifespan">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newItemName" layoutX="587.0" layoutY="363.0" />
+      <TextField fx:id="newExpectedLifeSpan" layoutX="587.0" layoutY="396.0" />
+      <Button layoutX="498.0" layoutY="484.0" mnemonicParsing="false" onAction="#updateItemClicked" prefHeight="38.0" prefWidth="147.0" text="Update Item" textFill="#47c950" />
+      <ButtonBar layoutX="-20.0" layoutY="-8.0" prefHeight="40.0" prefWidth="789.0">
+         <buttons>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#homeButtonClicked" prefHeight="25.0" text="Home" textAlignment="CENTER" textFill="#221d1d" />
+            <Button mnemonicParsing="false" onAction="#employeesButtonClicked" text="Employees" />
+            <Button mnemonicParsing="false" onAction="#clientsOnClicked" prefHeight="22.0" text="Clients" />
+            <Button mnemonicParsing="false" onAction="#itemTypesClicked" text="ItemTypes" />
+            <Button mnemonicParsing="false" onAction="#itemContainersClicked" prefHeight="25.0" prefWidth="691.0" text="ItemContainers" />
+            <Button mnemonicParsing="false" onAction="#shipmentOrderClicked" text="ShipmentOrder" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

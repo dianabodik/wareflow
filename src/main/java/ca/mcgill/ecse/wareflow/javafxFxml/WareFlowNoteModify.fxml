@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.mcgill.ecse.wareflow.javafxFxml.NotePageController">
+   <children>
+      <ListView layoutX="127.0" layoutY="59.0" prefHeight="290.0" prefWidth="769.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+      <Button layoutX="107.0" layoutY="492.0" mnemonicParsing="false" onAction="#addNoteClicked" prefHeight="38.0" prefWidth="147.0" text="Add Note" textFill="#47c950" />
+      <TextField fx:id="noteDate" layoutX="198.0" layoutY="329.0" />
+      <Text layoutX="21.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note Description">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="noteDescription" layoutX="198.0" layoutY="363.0" />
+      <Button layoutX="543.0" layoutY="562.0" mnemonicParsing="false" onAction="#removeNoteClicked" prefHeight="38.0" prefWidth="147.0" text="Remove Note" textFill="#f50606" />
+      <Line endX="-8.0" endY="-139.0" layoutX="385.0" layoutY="456.0" startX="-8.0" startY="84.0" />
+      <TextField fx:id="orderID3" layoutX="324.0" layoutY="549.0" />
+      <Text layoutX="237.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="orderID1" layoutX="198.0" layoutY="395.0" />
+      <TextField fx:id="employeeUsername" layoutX="198.0" layoutY="426.0" />
+      <Line endX="588.0" layoutX="181.0" layoutY="541.0" startX="-181.0" />
+      <Text layoutX="404.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="orderID2" layoutX="587.0" layoutY="329.0" />
+      <Text layoutX="404.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Note Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="404.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Description">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="404.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Employee Username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newNoteDate" layoutX="587.0" layoutY="363.0" />
+      <TextField fx:id="newDescription" layoutX="587.0" layoutY="396.0" />
+      <TextField fx:id="newEmployeeUsername" layoutX="587.0" layoutY="427.0" />
+      <Button layoutX="498.0" layoutY="492.0" mnemonicParsing="false" onAction="#updateNoteClicked" prefHeight="38.0" prefWidth="147.0" text="Update Note" textFill="#47c950" />
+      <Text layoutX="404.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Index">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="index1" layoutX="587.0" layoutY="456.0" />
+      <Text layoutX="237.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Index">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="index2" layoutX="324.0" layoutY="588.0" />
+      <ButtonBar layoutX="-21.0" layoutY="-8.0" prefHeight="40.0" prefWidth="789.0">
+         <buttons>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#homeButtonClicked" prefHeight="25.0" text="Home" textAlignment="CENTER" textFill="#221d1d" />
+            <Button mnemonicParsing="false" onAction="#employeesButtonClicked" text="Employees" />
+            <Button mnemonicParsing="false" onAction="#clientsOnClicked" prefHeight="22.0" text="Clients" />
+            <Button mnemonicParsing="false" onAction="#itemTypesClicked" text="ItemTypes" />
+            <Button mnemonicParsing="false" onAction="#itemContainersClicked" prefHeight="25.0" prefWidth="691.0" text="ItemContainers" />
+            <Button mnemonicParsing="false" onAction="#shipmentOrderClicked" text="ShipmentOrder" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

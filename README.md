@@ -1,20 +1,17 @@
-# :factory::ship: ECSE223 WareFlow Project: Team N
-
-_(Edit this file as needed, then remove this sentence)._
+# :factory::ship: ECSE223 WareFlow Project: Team 14
 
 ## Project Overview
 
-_Provide a one-sentence overview of your project here._
-
+We've built an application for a warehouse management system by implementing the model-view-controller design pattern. To view our application, run the WareFlowApplication.java file.
 For more information about the WareFlow application, please consult the [wiki](../../wiki).
 
 ## Team Members
 
 | Name          | GitHub username |
 | ------------- | --------------- |
-| Team Member A | ...             |
-| Team Member B | ...             |
-| Team Member C | ...             |
-| Team Member D | ...             |
-| Team Member E | ...             |
-| Team Member F | ...             |
+| Team Member A | dianabodik      |
+| Team Member B | denizkarakus123 |
+| Team Member C | sophiaxu2       |
+| Team Member D | MubeenMohammed  |
+| Team Member E | 4boris          |
+| Team Member F | katrinapanwar   |
